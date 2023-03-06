@@ -3,7 +3,6 @@ const TextInput = ({
   name = '',
   label = '',
   placeholder = '',
-  value = '',
   onChange = () => {},
   autoComplete = 'off',
   onBlur = () => {},
@@ -17,7 +16,6 @@ const TextInput = ({
       id={name}
       name={name}
       placeholder={placeholder || label}
-      value={value ?? ''}
       onChange={onChange}
       autoComplete={autoComplete}
       onBlur={onBlur}

@@ -14,8 +14,8 @@ import 'hardhat-contract-sizer';
 dotenvConfig({ path: resolve(__dirname, './.env') });
 
 // const COINMARKETCAP_API_KEY = process.env.COINMARKETCAP_API_KEY || '';
-const GOERLI_RPC_URL = process.env.GOERLI_RPC_URL;
-const PRIVATE_KEY = process.env.PRIVATE_KEY || 'privatKey';
+// const BSC_TESTNET_RPC_URL = process.env.BSC_TESTNET_RPC_URL;
+// const PRIVATE_KEY = process.env.PRIVATE_KEY || 'privatKey';
 // const ETHERSCAN_API_KEY = process.env.ETHERSCAN_API_KEY || '';
 
 // You need to export an object to set up your config
@@ -30,11 +30,6 @@ const config: HardhatUserConfig = {
     localhost: {
       chainId: 31337,
       allowUnlimitedContractSize: true,
-    },
-    goerli: {
-      url: GOERLI_RPC_URL,
-      accounts: [PRIVATE_KEY],
-      gasPrice: 80_000_000_000,
     },
     bscTestnet: {
       url: 'https://data-seed-prebsc-2-s1.binance.org:8545',
@@ -55,16 +50,6 @@ const config: HardhatUserConfig = {
         },
       },
     ],
-  },
-  gasReporter: {
-    enabled: true,
-    currency: 'USD',
-    outputFile: 'gas-report.txt',
-    noColors: true,
-  },
-  typechain: {
-    outDir: 'typechain',
-    target: 'ethers-v5',
   },
 };
 
