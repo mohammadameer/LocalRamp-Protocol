@@ -5,11 +5,11 @@
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
-  --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono', 'Roboto Mono',
+  --font-mono: -apple-system, 'IBM Plex Sans' ,ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono', 'Roboto Mono',
     'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro', 'Fira Mono', 'Droid Sans Mono',
     'Courier New', monospace;
 
-  --foreground-rgb: 255, 255, 255;
+  --foreground-rgb: '#10b981';
   --background-start-rgb: 0, 0, 0;
   --background-end-rgb: 0, 0, 0;
 
@@ -52,7 +52,7 @@ body {
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
+  color: #10b981;
   background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb)))
     rgb(var(--background-start-rgb));
 }
